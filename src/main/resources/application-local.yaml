@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+#datasource:
+#  url: jdbc:mysql://localhost:3306/microservice_product
+#  username: your_mysql_username
+#  password: your_mysql_password
+#  driver-class-name: com.mysql.cj.jdbc.Driver
