@@ -13,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v1/difficult")
 @AllArgsConstructor
+@CrossOrigin
 public class DifficultController {
 
     private final DifficultService difficultService;
