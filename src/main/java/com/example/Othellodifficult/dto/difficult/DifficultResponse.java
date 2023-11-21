@@ -1,4 +1,4 @@
-package com.example.Othellodifficult.dto;
+package com.example.Othellodifficult.dto.difficult;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

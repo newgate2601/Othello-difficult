@@ -1,4 +1,4 @@
-package com.example.Othellodifficult.dto;
+package com.example.Othellodifficult.dto.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class DifficultRequest {
-    private Integer amount;
+public class UserIdResponse {
+    private Long userId;
 }
