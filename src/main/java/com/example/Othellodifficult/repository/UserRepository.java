@@ -1,13 +1,12 @@
 package com.example.Othellodifficult.repository;
 
 import com.example.Othellodifficult.entity.DifficultEntity;
+import com.example.Othellodifficult.entity.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
-
 @Repository
-public interface DifficultRepository extends JpaRepository<DifficultEntity, Long> {
-    List<DifficultEntity> findAllByUserId(Long userId);
-    void deleteAllByUserId(Long userId);
+public interface UserRepository extends JpaRepository<UserEntity, Long> {
+    UserEntity findByUsername(String username);
+    Boolean existsByUsername(String username);
 }

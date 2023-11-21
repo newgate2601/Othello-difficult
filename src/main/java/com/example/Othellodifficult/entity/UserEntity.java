@@ -5,20 +5,17 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "tbl_difficults")
+@Table(name = "tbl_users")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class DifficultEntity {
+public class UserEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "amount")
-    private Integer amount;
-
-    @Column(name = "user_id")
-    private Long userId;
+    private String username;
+    private String password;
 }
