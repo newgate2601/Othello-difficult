@@ -24,8 +24,8 @@ public class UserController {
 
     @Operation(summary = "Đăng ký tài khoản")
     @PostMapping("sign-up")
-    public void signUp(@RequestBody UserRequest signUpRequest){
-        userService.signUp(signUpRequest);
+    public String signUp(@RequestBody UserRequest signUpRequest){
+        return userService.signUp(signUpRequest);
     }
 
     @Operation(summary = "Đăng nhập")
